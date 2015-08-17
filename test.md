@@ -1,24 +1,35 @@
-#1, chèn link
-	[link github] (https://github.com)
-##2, chèn ảnh
-	<img src="http://prntscr.com/85jgh7">
-###3, in nghiêng
-		*[github] (https://github.com/hocchudong/git-github-for-sysadmin)*
-####4, in đậm
-		**	<img src="http://prntscr.com/85jgh7">**
-#####5, bo chữ
-			'bo cái này vào'
-######6, nổi bật
-	'''sh
-	cộng hòa xã hội chủ nghĩa việt nam
-	độc lập tự do hạnh phúc
-	'''
-#####7, gạch đầu dòng
-	-gạch đầu dòng thứ nhất
-	<ul>
-	<li> Thụt đầu dòng 1</li>
-	<li> Thụt đầu dòng 2</li>
-	</ul>
+#
+ chèn link 	[ github] (https://github.com)
+##
+ <img src="http://prntscr.com/85jgh7"> 
+
+###
+		*[link github in nghiêng] (https://github.com/hocchudong/git-github-for-sysadmin "kì diệu vãi")*
+
+####  **in đậm**
+
+`bo cái này vào`
+
+
+#####làm nổi bật: 
+
+```sh
+auto eth0
+iface eth0 inet static
+ipaddress 10.10.10.10
+netmask 255.255.255.0
+gateway 10.10.10.1
+dns-nameservers 8.8.8.8
+```
+
+#####gạch đầu dòng
+- Gạch đầu dòng thứ nhất
+  <ul>
+  <li>Thụt với đầu dòng 1</li>
+  <li>Thụt với đầu dòng 1</li>
+  </ul>
+- dấu chấm thứ hai
+
 
 ####8, tạo bảng
 	|STT| cột 1 | cột 2 | cột 3 |
