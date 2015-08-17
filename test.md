@@ -4,7 +4,7 @@
  <img src="http://prntscr.com/85jgh7"> 
 
 ###
-		*[link github in nghiêng] (https://github.com/hocchudong/git-github-for-sysadmin "kì diệu vãi")*
+		*[link github in nghiêng] (https://github.com/hocchudong/git-github-for-sysadmin "kì diệu thế")*
 
 ####  **in đậm**
 
