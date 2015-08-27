@@ -1,5 +1,5 @@
 #1.Các lệnh với user trong linux
-**-Tạo 1 user mới: **
+**-Tạo 1 user mới:**
 
 `$useradd [option] <tên user>`
 
