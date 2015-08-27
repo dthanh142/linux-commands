@@ -12,7 +12,7 @@ Các tùy chọn:
     -m Nếu như thư mục của -d chưa có, thì tự động tạo mới.
     -s shell : mặc nhiên sẽ dùng bash shell
 ---
-**-Đặt password cho 1 user: **
+**-Đặt password cho 1 user:**
 
 `$passwd <tên user>`
 
@@ -25,23 +25,23 @@ Các tùy chọn:
 
 ---
 
-**-Thay đổi thông tin user: **
+**-Thay đổi thông tin user:**
 
 `$usermod <user name>`
 
 ---
 
-**-Đổi mật khẩu cho user: **
+**-Đổi mật khẩu cho user:**
 
 `$passwd <user name>`
 
 ---
 
-**-Đổi user : **
+**-Đổi user :**
 
 `	$su <user name>`
 
-**-Xem thông tin user: **
+**-Xem thông tin user:**
 
 `$id`
 
@@ -73,6 +73,6 @@ UserName : Password : UserID : PrincipleGroup : Comments : HomeDirectory : Shell
 
 ---
 
-###**/etc/shadow **
+###**/etc/shadow**
 
 Chứa chuỗi password đã mã hóa bằng hàm băm và thông tin về khác như Password Age của User.
