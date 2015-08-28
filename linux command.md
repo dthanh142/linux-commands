@@ -41,6 +41,9 @@ Các tùy chọn:
 
 `	$su <user name>`
 
+---
+
+
 **-Xem thông tin user:**
 
 `$id`
@@ -77,6 +80,8 @@ UserName : Password : UserID : PrincipleGroup : Comments : HomeDirectory : Shell
 
 Chứa chuỗi password đã mã hóa bằng hàm băm và thông tin về khác như Password Age của User.
 
+---
+
 #3. Lệnh update, upgrade và dist-upgrade
 
 #####**-apt-get update**: 
@@ -91,3 +96,27 @@ Tuy nhiên, việc upgrade sẽ không gỡ bỏ hoặc cài đặt mới 
 **-apt-get dist-upgrade**:
 
  Tương tự như upgrade, nhưng cung cấp cơ chế quản lí những gói phụ thuộc. Khi tiến hành `apt-get dist-upgrade`, ngoài việc cập nhật phiên bản, thì những gói phụ thuộc cũng sẽ được cài đặt thêm hoặc gỡ bỏ tùy thuộc vào độ quan trọng của gói đó.
+ 
+ ---
+ 
+#4.Lệnh wget
+
+GNU wget là 1 ứng dụng miễn phí cung cấp khả năng tải dữ liệu trong môi trường dòng lệnh của linux, nó hỗ trợ các giao thức phổ biến như HTTP, HTTPS và FTP cũng như thông qua các HTTP proxy. Wget là 1 chương trình tải dữ liệu không tương tác nghĩa là có thể chạy nền trong khi user ko đăng nhập vào hệ thống. Điều này khác biệt hoàn toàn so với việc sử dụng các chương trình tải dữ liệu phổ biến khác yêu cầu user phải liên tục hiện hữu trong phiên tải dữ liệu. Wget tuy khá phức tạp cho người mới sử dụng nhưng nó lại hết sức mạnh mẽ và hiệu quả. Nó có thể lần theo từng link HTML, XHTML và CSS và chuyển đổi các link đó lưu chúng lại dưới một phiên bản offline trên máy. Wget xử lý rất tốt những trường hợp do lỗi về mạng, chậm không ổn định...nó sẽ tự động tải file bị lỗi cho đến khi tất cả dữ liệu yêu cầu được tải về. 
+
+ Một số tùy chọn trong wget: 
+
+    -O {tên mới}: lưu file mới tải về dưới 1 tên khác
+    -b 	: tải file trong chế độ nền, ví dụ là tải file trong khi tắt máy
+    --spider: tải kiểm tra tình trạng link tồn tại hay ko
+    -i tải nhiều link 1 lúc
+
+Mặc định thì wget sẽ thử tới 20 lần retry nếu việc tải dữ liệu không thành công. Nếu bạn muốn thay đổi số lần retry thành 50 lần thì câu lệnh sẽ như sau:
+
+    wget --tries=50 http://wordpress.org/latest.tar.gz
+
+Chúng ta có thể buộc wget chỉ tải về những file có định dạng là ảnh (jpg, gif...) hay pdf... bằng cấu trúc:
+
+    $ wget -r -A $extension $URL
+Ví dụ sau sẽ tải về tòan bộ các ảnh có định dạng jpg hoặc gif từ URL:  [http://www.linuxjournal.com/content/downloading-entire-web-site-wget](http://www.linuxjournal.com/content/downloading-entire-web-site-wget)
+
+    $ wget -r -A jpg,gif http://www.linuxjournal.com/content/downloading-entire-web-site-wget
