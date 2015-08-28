@@ -79,10 +79,15 @@ Chứa chuỗi password đã mã hóa bằng hàm băm và thông tin về khác
 
 #3. Lệnh update, upgrade và dist-upgrade
 
--apt-get update: Khi 1 gói đã cài đặt trong hệ thống có phiên bản mới, nó sẽ được định nghĩa trong file /etc/apt/sources.list và /etc/apt/sources.list.d
-Lệnh apt-get update sẽ cập nhật lại 2 file đó và kiểm tra thông tin về những gói cần cập nhật
+#####**-apt-get update**: 
+Khi 1 gói đã cài đặt trong hệ thống có phiên bản mới, nó sẽ được định nghĩa trong file **/etc/apt/sources.list** và **/etc/apt/sources.list.d** . 
+Lệnh `apt-get update` sẽ cập nhật lại 2 file đó và kiểm tra thông tin về những gói cần cập nhật
 
--apt-get upgrade: Tiến hành cập nhật phiên bản mới cho những gói đã cài đặt trong hệ thống nếu tìm thấy những thông tin cập nhật trong file /etc/apt/sources.list. Điều này yêu cầu cần chạy lệnh update trước.
+**-apt-get upgrade**:
+
+ Tiến hành cập nhật phiên bản mới cho những gói đã cài đặt trong hệ thống nếu tìm thấy những thông tin cập nhật trong file **/etc/apt/sources.list**. Điều này yêu cầu cần chạy lệnh update trước.
 Tuy nhiên, việc upgrade sẽ không gỡ bỏ hoặc cài đặt mới những gói phụ thuộc. Ví dụ, khi tiến hành cập nhật 1 gói ứng dụng, những thư viện không còn giá trị sử dụng sẽ không bị gỡ bỏ, hoặc những thư viện mới sẽ không được cài đặt bổ sung.
 
--apt-get dist-upgrade: Tương tự như upgrade, nhưng cung cấp cơ chế quản lí những gói phụ thuộc. Khi tiến hành dist-upgrade, ngoài việc cập nhật phiên bản, thì những gói phụ thuộc cũng sẽ được cài đặt thêm hoặc gỡ bỏ tùy thuộc vào độ quan trọng của gói đó.
+**-apt-get dist-upgrade**:
+
+ Tương tự như upgrade, nhưng cung cấp cơ chế quản lí những gói phụ thuộc. Khi tiến hành `apt-get dist-upgrade`, ngoài việc cập nhật phiên bản, thì những gói phụ thuộc cũng sẽ được cài đặt thêm hoặc gỡ bỏ tùy thuộc vào độ quan trọng của gói đó.
