@@ -133,3 +133,13 @@ Là 1 công cụ đùng để chuyển dữ liệu lên server hoặc từ serv
 	- curl URL --silent -O {tên file}: Lưu thông tin tải về vào 1 file
 	- curl [URL] -- progress: hiển thị quá trình tải ra (theo %)
 curl sử dụng lấy thông tin về với điều kiện đi kèm như cookies (tên, pass) hay header (-H "tên header")
+
+---
+
+Tham khảo:
+
+[http://nanchor.blogspot.com/2012/07/co-ban-ve-wget.html](http://nanchor.blogspot.com/2012/07/co-ban-ve-wget.html)
+
+[http://www.justpassion.net/programming/bash-shell/lenh-curl-trong-linux-2.html](http://www.justpassion.net/programming/bash-shell/lenh-curl-trong-linux-2.html)
+
+[http://linux.die.net/man/8/apt-get](http://linux.die.net/man/8/apt-get)
