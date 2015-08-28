@@ -1,4 +1,4 @@
-#1.Các lệnh với user trong linux
+﻿#1.Các lệnh với user trong linux
 **-Tạo 1 user mới:**
 
 `$useradd [option] <tên user>`
@@ -76,3 +76,5 @@ UserName : Password : UserID : PrincipleGroup : Comments : HomeDirectory : Shell
 ###**/etc/shadow**
 
 Chứa chuỗi password đã mã hóa bằng hàm băm và thông tin về khác như Password Age của User.
+
+#3. Lệnh update, upgrade và dist-upgrade
