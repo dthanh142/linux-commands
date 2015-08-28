@@ -109,6 +109,7 @@ GNU wget là 1 ứng dụng miễn phí cung cấp khả năng tải dữ liệu
     -b 	: tải file trong chế độ nền, ví dụ là tải file trong khi tắt máy
     --spider: tải kiểm tra tình trạng link tồn tại hay ko
     -i tải nhiều link 1 lúc
+    -P $folder_name : chỉ định lưu tại $folder-name.
 
 Mặc định thì wget sẽ thử tới 20 lần retry nếu việc tải dữ liệu không thành công. Nếu bạn muốn thay đổi số lần retry thành 50 lần thì câu lệnh sẽ như sau:
 
@@ -120,3 +121,15 @@ Chúng ta có thể buộc wget chỉ tải về những file có định dạng
 Ví dụ sau sẽ tải về tòan bộ các ảnh có định dạng jpg hoặc gif từ URL:  [http://www.linuxjournal.com/content/downloading-entire-web-site-wget](http://www.linuxjournal.com/content/downloading-entire-web-site-wget)
 
     $ wget -r -A jpg,gif http://www.linuxjournal.com/content/downloading-entire-web-site-wget
+
+---
+
+#**5.Lệnh CURL:**
+
+Là 1 công cụ đùng để chuyển dữ liệu lên server hoặc từ server về, sử dụng hỗ trợ giao thức HTTP, HTTPSs, LDAP, POP3... Các lệnh được thiết kế để làm việc mà ko cần giao diện người dùng. curl hỗ trợ nhiều tính năng bao gồm POST, GET, chứng thực, tải các tập tin được chia nhỏ, giới hạn tốc độ tập tính, kích thước tập tin...
+
+	- curl [URL]: thì thông tin đc tải về sẽ đc in toàn bộ ra màn hình, và toàn bộ thông tin tải về sẽ được hiển thị lên trong quá trình cài đặt (lưu ý cần lưu vào file nội dung cụ thể nếu ko sẽ bị mất)
+	- curl -- slient [URL]: thông tin vẫn tải ra màn hình nhưng ko hiển thị trong quá trình cài đặt
+	- curl URL --silent -O {tên file}: Lưu thông tin tải về vào 1 file
+	- curl [URL] -- progress: hiển thị quá trình tải ra (theo %)
+curl sử dụng lấy thông tin về với điều kiện đi kèm như cookies (tên, pass) hay header (-H "tên header")
