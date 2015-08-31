@@ -109,7 +109,16 @@ GNU wget là 1 ứng dụng miễn phí cung cấp khả năng tải dữ liệu
     --spider: tải kiểm tra tình trạng link tồn tại hay ko
     -i tải nhiều link 1 lúc
     -P $folder_name : chỉ định lưu tại $folder-name.
+    -c: resume download
+    -r: download cả thư mục con
 
+Ví dụ:
+`$ wget -c -r --no-parent --reject index.html http://localhost:8000/folder1/`
+
+    -c : là có thể resume down được file/directory (nếu server support việc này)
+    -r : recursive tức là down được file/directory trong diretory (đệ qui) 
+    --no-parent : chỉ down từ folder1/ trở đi, chứ k down ngược http://localhost:8000/
+    --reject index.html : không down các file index.html
 Mặc định thì wget sẽ thử tới 20 lần retry nếu việc tải dữ liệu không thành công. Nếu bạn muốn thay đổi số lần retry thành 50 lần thì câu lệnh sẽ như sau:
 
     wget --tries=50 http://wordpress.org/latest.tar.gz
