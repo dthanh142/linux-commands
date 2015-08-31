@@ -85,8 +85,7 @@ Chứa chuỗi password đã mã hóa bằng hàm băm và thông tin về khác
 #3. Lệnh update, upgrade và dist-upgrade
 
 #####**-apt-get update**: 
-Khi 1 gói đã cài đặt trong hệ thống có phiên bản mới, nó sẽ được định nghĩa trong file **/etc/apt/sources.list** và **/etc/apt/sources.list.d** . 
-Lệnh `apt-get update` sẽ cập nhật lại 2 file đó và kiểm tra thông tin về những gói cần cập nhật
+Được dùng để đồng bộ lại file index của các gói phần mềm. Những file index này được tìm thấy ở những địa chỉ được định nghĩa trong file /etc/apt/sources.list hoặc /etc/apt/sources.list.d. Hệ thống sẽ kiểm tra những file index này để xác định gói phần mềm nào có phiên bản cập nhật. Cần tiến hành update trước khi upgrade hoặc dist-upgrade
 
 **-apt-get upgrade**:
 
